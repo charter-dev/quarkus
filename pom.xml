@@ -55,6 +55,36 @@
 			<artifactId>quarkus-smallrye-openapi</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-hibernate-validator</artifactId>
+		</dependency>
+
+<!--		 Flyway 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-flyway</artifactId>
+		</dependency>
+
+		 Redis 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-redis-client</artifactId>
+		</dependency>
+
+		 Kafka 
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
+		</dependency>-->
+
+		<!-- Test -->
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-junit5</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
