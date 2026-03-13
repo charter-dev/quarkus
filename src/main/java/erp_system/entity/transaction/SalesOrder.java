@@ -1,8 +1,6 @@
 package erp_system.entity.transaction;
 
-import java.time.LocalDate;
-
-import erp_system.entity.master.Customer;
+import erp_system.entity.master.Product;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
@@ -10,11 +8,11 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class SalesOrder extends PanacheEntity {
 
-    public String soNumber;
+	public String orderNumber;
+
+    public Integer qty;
 
     @ManyToOne
-    public Customer customer;
-
-    public LocalDate orderDate;
+    public Product product;
 
 }
