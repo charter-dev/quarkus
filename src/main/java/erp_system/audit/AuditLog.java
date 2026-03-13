@@ -9,8 +9,16 @@ import jakarta.persistence.Entity;
 public class AuditLog extends PanacheEntity {
 
     public String username;
-    public String action;
-    public String entityName;
+
+    public String method;
+
+    public String path;
+
+    public String requestBody;
+
+    public Integer status;
+
+    public String ipAddress;
 
     public LocalDateTime createdDate;
 
